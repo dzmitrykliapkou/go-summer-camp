@@ -6,7 +6,7 @@ import (
 )
 
 func main() {
-	// Helo service that says hi to the world
+	// Hello service that says hi to the world
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
 		name := r.URL.Query().Get("name")
 		if name == "" {
